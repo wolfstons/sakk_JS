@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Páczi Balázs</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Híres sakkozók</h1>
+      </header>
+
+ 3. A táblázat egyes fejléc
+      felirataira kattintva a táblázatot rendezd az adott oszlop szerint
+      csökkenő, illetve növekvő sorrendbe! 4. A táblázat alatt a két beviteli
+      mezőbe két sakktábla pozíciót adunk meg. Írj függvényt, ami bemeneti
+      paraméterként megkapja a két pozíciót, ami két ellentétes színű vezér
+      pozícióját jelenti. A kimenetében pedig megmondja, hogy a két vezér üti-e
+      egymást.
+      <article>
+        <table id="tabla" border="1">
+          <thead>
+            <tr>
+              <th id="nev">Név</th>
+              <th id="nem">Nemzetiség</th>
+              <th id="gyoz">Győzelmek száma</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+      <section>
+        <h2>Sakktábla pozíciók</h2>
+        
+        <div>
+          <label for="pozicio1">1. pozíció:</label>
+          <input
+            type="text"
+            id="pozicio1"
+            name="pozicio1"
+            placeholder="pl. e4"
+          />
+        </div>
+
+        <div>
+          <label for="pozicio2">2. pozíció:</label>
+          <input
+            type="text"
+            id="pozicio2"
+            name="pozicio2"
+            placeholder="pl. d5"
+          />
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; Páczi Balázs</p>
+      </footer>
+    </main>
+  </body>
+</html>
