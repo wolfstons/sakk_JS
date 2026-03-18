@@ -1,9 +1,8 @@
 import { sakkozok } from "./adatok.js";
 import { megjelenit } from "./tablazatmegjelenit.js";
-
+import { gomb, kiir } from "./fugvenyek.js";
 
 megjelenit(sakkozok);
-
 
 let novekvo = {
   nev: true,
@@ -22,9 +21,7 @@ thElemek[2].addEventListener("click", () => rendez("gyozelmek_szama"));
 function rendez(mezo) {
   sakkozok.sort((a, b) => {
     if (typeof a[mezo] === "number") {
-      return novekvo[mezo]
-        ? a[mezo] - b[mezo]
-        : b[mezo] - a[mezo];
+      return novekvo[mezo] ? a[mezo] - b[mezo] : b[mezo] - a[mezo];
     } else {
       return novekvo[mezo]
         ? a[mezo].localeCompare(b[mezo])
@@ -38,3 +35,5 @@ function rendez(mezo) {
   // újrarajzolás
   megjelenit(sakkozok);
 }
+
+gomb();
